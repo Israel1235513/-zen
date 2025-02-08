@@ -1,6 +1,6 @@
 {
   "name": "zenmdl",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Zen Module",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,8 @@
   "homepage": "https://github.com/Israel1235513/-zen#readme",
   "dependencies": {
     "axios": "^1.7.9",
+    "chalk": "^5.4.1",
     "fs": "^0.0.1-security",
-    "os": "^0.1.2",
-    "zenmdl": "^1.0.0"
+    "os": "^0.1.2"
   }
 }

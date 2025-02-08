@@ -1,10 +1,14 @@
 const os = require('os');
+const axios = require('axios')
 const fs = require('fs');
 
 const { ip, cnpj } = require('./functions/consultas.js')
 
-async function Saudação() {
+async function Saudacao() {
+  const response = await fetch('https://api.ipify.org?format=json');
+  const data = await response.json();
   const platform = os.platform();
+  console.log("🌐 - Ip: " + data.ip);
   console.log("💻 - Sistema Operacional: " + platform + "\n⏱ - Iniciando...\n⚡ - Zen Module iniciado com sucesso.\n\n\n");
 }
 
@@ -42,6 +46,6 @@ const consultas = [
   }
 ];
 
-Saudação();
+Saudacao();
 
 module.exports = { consultas };
