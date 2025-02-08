@@ -5,14 +5,6 @@ const fs = require('fs');
 const { ip, cnpj } = require('./functions/consultas.js')
 const { gerar } = require('./functions/geradores.js')
 
-async function Saudacao() {
-  const response = await fetch('https://api.ipify.org?format=json');
-  const data = await response.json();
-  const platform = os.platform();
-  console.log("🌐 - Ip: " + data.ip);
-  console.log("💻 - Sistema Operacional: " + platform + "\n⏱ - Iniciando...\n⚡ - Zen Module iniciado com sucesso.\n\n\n");
-}
-
 // Usando um array para consultas
 const consultas = [
   {
@@ -85,7 +77,5 @@ const geradores = [
     }
   }
 ]
-
-Saudacao();
 
 module.exports = { consultas, geradores };
