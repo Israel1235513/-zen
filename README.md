@@ -1,10 +1,10 @@
-# Zen Module
+# Zen Module <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px">
 > * <strong>Meu modulo com coisas de bot, e apis.
 ```bash
 npm install zenmdl
 ```
 # Consultas
-> * <strong>Uso para rests ou bot de telegram e whatsapp.
+> * <strong>Uso para rests ou bot de telegram e whatsapp. <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px">
 ```js
 const zenModule = require('zenmdl');
 
@@ -39,7 +39,7 @@ ip('45.229.116.56'); // Se não tiver ip não vai enviar um resultado valido.
 cnpj('16049656000139'); // Se não tiver o cnpj não vai enviar o resultado valido.
 ```
 
-# Geradores
+# Geradores <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/PC.gif" width="29px">
 > * <strong>Ferramenta para uso pessoal.
 
 ```js
@@ -52,3 +52,8 @@ zenModule.geradores[0].cnpj() // Cria um cnpj
 zenModule.geradores[0].cnh() // Cria um cnh
 ```
 > * <strong>Essas ferramentas só gera isso, não que seja verdade.
+
+## Sobre o Criador <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="29px">
+> * Whatsapp: +55 98 99214-9806
+> * Youtube: @zenitsu_yt014
+> * Discord: dub_.eduardo

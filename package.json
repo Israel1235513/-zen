@@ -1,6 +1,6 @@
 {
   "name": "zenmdl",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Zen Module",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,14 @@
     "chalk": "^5.4.1",
     "fs": "^0.0.1-security",
     "os": "^0.1.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ZEN",
+    "NODEJS",
+    "ZENITSUMODZ",
+    "MODULE",
+    "CONSULTAS",
+    "GERADOR"
+  ]
 }

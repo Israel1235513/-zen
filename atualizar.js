@@ -20,10 +20,10 @@ const updateVersion = async () => {
     const chalk = chalkModule.default;
 
     console.log(chalk.blue("=== Tudo pronto para começar ==="));
-    console.log(chalk.yellow("=== Atualizando versão do npm ==="));
+    console.log(chalk.yellow("=== Atualizando versão do npm ===\n"));
 
     await execPromise("npm version patch");
-    console.log(chalk.green("=== Versão patch atualizada ==="));
+    console.log(chalk.green("=== Versão patch atualizada ===\n"));
 
     await execPromise("npm publish");
     console.log(chalk.green("=== Publicação concluída ==="));
