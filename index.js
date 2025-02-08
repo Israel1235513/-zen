@@ -3,6 +3,7 @@ const axios = require('axios')
 const fs = require('fs');
 
 const { ip, cnpj } = require('./functions/consultas.js')
+const { gerar } = require('./functions/geradores.js')
 
 async function Saudacao() {
   const response = await fetch('https://api.ipify.org?format=json');
@@ -47,7 +48,44 @@ const consultas = [
   }
 ];
 
+const geradores = [
+  {
+    pessoa: async function() {
+      return gerar('pessoa');
+    },
+    placa: async function() {
+      return gerar('placa');
+    },
+    empresa: async function() {
+      return gerar('empresa');
+    },
+    veiculo: async function() {
+      return gerar('veiculo');
+    },
+    conta_bancaria: async function() {
+      return gerar('conta_bancaria');
+    },
+    renavam: async function() {
+      return gerar('renavam');
+    },
+    cpf: async function() {
+      return gerar('cpf');
+    },
+    cnpj: async function() {
+      return gerar('cnpj');
+    },
+    rg: async function() {
+      return gerar('rg');
+    },
+    cnh: async function() {
+      return gerar('cnh');
+    },
+    certidao: async function() {
+      return gerar('certidao');
+    }
+  }
+]
 
 Saudacao();
 
-module.exports = { consultas };
+module.exports = { consultas, geradores };
