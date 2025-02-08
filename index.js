@@ -16,35 +16,37 @@ async function Saudacao() {
 const consultas = [
   {
     ip: async function(query) {
-      if (!query) {
+      if (!query || query.trim() === "") {
         console.warn("Cadê o IP?");
         return;
       }
-
+      if (/^0+\.0+\.0+\.0+$/.test(query) || !query.includes('.')) {
+        console.warn("IP inválido.");
+        return;
+      }
       try {
-        const result = await ip(query);
-        console.log(result)
+        const { response, result } = await ip(query);
+        return { response, result };
       } catch (error) {
-        console.error("Erro ao buscar informações do IP:", error);
+        console.error("Erro ao consultar o IP:", error);
       }
     },
 
     cnpj: async function(query) {
-      if (!query) {
-        console.warn("Cadê o CNPJ?");
+      if (!query || !/^[0-9]{14}$/.test(query)) {
+        console.warn("CNPJ inválido.");
         return;
       }
-
       try {
-        const result = await cnpj(query);
-        console.log(result)
+        const { response, result } = await cnpj(query);
+        return { response, result };
       } catch (error) {
         console.error("Erro ao buscar informações do CNPJ:", error);
       }
     }
-
   }
 ];
+
 
 Saudacao();
 
