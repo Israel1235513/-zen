@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Israel1235513/-zen/issues"
   },
-  "homepage": "https://github.com/Israel1235513/-zen#readme"
+  "homepage": "https://github.com/Israel1235513/-zen#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "fs": "^0.0.1-security",
+    "os": "^0.1.2",
+    "zenmdl": "^1.0.0"
+  }
 }
