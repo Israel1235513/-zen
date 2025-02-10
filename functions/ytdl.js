@@ -113,11 +113,4 @@ async function search(query) {
     }
 }
 
-const data = search('rick roll')
-
-data.then((data) => {
-    data.readme = "kk"
-    console.log(data)
-})
-
 module.exports = { downloadYouTube, search }
