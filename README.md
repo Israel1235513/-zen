@@ -67,7 +67,13 @@ zenModule.ytdl[0].mp4('Rick Roll', '/storage/emulated/0/Download/');
 zenModule.ytdl[0].mp3('Rick Roll', '/storage/emulated/0/Download/');
 // No Download você pode trocar para qualquer caminho que quiser.
 
-zenModule.ytdl[0].pesquisa('Rick Roll')
+const data = zenModule.ytdl[0].pesquisa('Rick Roll');
+
+data.then((data) => {
+    data.json = "Valor"
+    console.log(data)
+})
+
 // Para pesquisar dados do vídeo.
 ```
 
