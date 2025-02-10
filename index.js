@@ -4,6 +4,7 @@ const fs = require('fs');
 
 const { ip, cnpj } = require('./functions/consultas.js')
 const { gerar } = require('./functions/geradores.js')
+const { downloadYouTube, search } = require('./functions/ytdl.js')
 
 // Usando um array para consultas
 const consultas = [
@@ -78,4 +79,18 @@ const geradores = [
   }
 ]
 
-module.exports = { consultas, geradores };
+const ytdl = [
+  { 
+    mp3: async function(query, path) {
+      downloadYouTube(query, 'audio', path)
+    },
+    mp4: async function(query, path) {
+      downloadYouTube(query, 'video', path)
+    },
+    pesquisa: async function(query) {
+      return await search(query);
+    }
+  }
+]
+
+module.exports = { consultas, geradores, ytdl };

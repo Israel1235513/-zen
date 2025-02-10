@@ -53,6 +53,24 @@ zenModule.geradores[0].cnh() // Cria um cnh
 ```
 > * <strong>Essas ferramentas só gera isso, não que seja verdade.
 
+# Ytdl
+> * <strong>Serve para baixar vídeos do youtube e dados.
+```js
+const zenModule = require('zenmdl');
+// Para PC
+zenModule.ytdl[0].mp4('Rick Roll', 'C:/Users/Users/Downloads/'); 
+zenModule.ytdl[0].mp3('Rick Roll', 'C:/Users/Users/Downloads/');
+// No Users você coloca o nome do User do seu computador.
+
+// Para Celular
+zenModule.ytdl[0].mp4('Rick Roll', '/storage/emulated/0/Download/');
+zenModule.ytdl[0].mp3('Rick Roll', '/storage/emulated/0/Download/');
+// No Download você pode trocar para qualquer caminho que quiser.
+
+zenModule.ytdl[0].pesquisa('Rick Roll')
+// Para pesquisar dados do vídeo.
+```
+
 ## Sobre o Criador <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="29px">
 > * Whatsapp: +55 98 99214-9806
 > * Youtube: @zenitsu_yt014
